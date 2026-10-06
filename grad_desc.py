@@ -1,1 +1,0 @@
-## TO-DO: Build grad_desc algorithm to implement into main.ipynb
