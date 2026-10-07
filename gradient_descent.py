@@ -23,7 +23,6 @@ def gradient_descent(X, y, learning_rate=0.05, max_iterations=10000, tolerance=0
         #     print(f"Iteration {i}, Loss: {mse}")
 
         if not np.isfinite(mse):
-            print("Error: Non-finite loss value encountered.")
             break
 
         if i > 0 and abs(loss[-2] - loss[-1]) < tolerance:
