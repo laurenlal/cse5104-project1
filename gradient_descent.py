@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 
 #main gradient descent algorithm. returns weights, bias, and the loss 
-def gradient_descent(X, y, learning_rate=0.05, max_iterations=10000, tolerance=0.001):
+def gradient_descent(X, y, learning_rate=0.05, max_iterations=10000, tolerance=1e-10):
     n, p = X.shape
     weights = np.zeros(p)
     bias = 0.0
